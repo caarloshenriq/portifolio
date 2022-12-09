@@ -45,12 +45,6 @@ const music_list = [
         artist : 'LorShaw ft. Lil Sheep & Dans',
         music : 'files/Rackzzz.mp3'
     },
-    {
-        img : 'img/Rackzzz.jpg',
-        name : 'Pain pt.2',
-        artist : 'LorShaw',
-        music : 'files/pain pt 2.mp3'
-    }
 ];
 
 loadTrack(track_index);
