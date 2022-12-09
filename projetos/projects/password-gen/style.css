@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./background.jpg) center;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background-blend-mode: color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+ /*quadrado*/
+.pw-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 10px 4px 10px 4px rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+    border-radius: 8px;
+    border: 1.5px solid #000;
+}
+ /*quadrado da senha*/
+.pw-header {
+    padding: 1rem;
+}
+ /*conteudo do quadrado*/
+.pw {
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+/*botão copy*/
+.pw button {
+    background-color: #fff;
+    border: none;
+    color: rgb(29, 2, 56);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0. 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+/*opções*/
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+/*gerar senha*/
+.generate {
+    background-color: rebeccapurple;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 3px;
+}
