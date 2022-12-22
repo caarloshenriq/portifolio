@@ -39,3 +39,4 @@ const loop = setInterval(() => {
 
 //sistema de pulo
 document.addEventListener('keydown', jump)
+document.addEventListener('touch', jump)
